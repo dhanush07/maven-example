@@ -19,10 +19,11 @@ jobs:
 
       - name: Setup JFrog CLI
         uses: jfrog/setup-jfrog-cli@v4
-        env:
+        env:  
            JF_URL: https://dhanushvm07.jfrog.io 
         with:
-            oidc-provider-name: dhanushoidc 
+           oidc-provider-name: dhanushoidc
+           oidc-audience: dhanushoidc
         
 
         #env:

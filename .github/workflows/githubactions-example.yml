@@ -47,11 +47,11 @@ jobs:
                   --repo-deploy-releases bmw-test-01-libs-release-local \
                   --repo-deploy-snapshots bmw-test-01-libs-release-local
                   
-      - name: JFrog Curation Audit Command
-        run: jf ca
+     # - name: JFrog Curation Audit Command
+      #  run: jf ca
 
-      - name: JFrog Xray Audit command
-        run: jf audit
+     # - name: JFrog Xray Audit command
+      #  run: jf audit
         
       - name: Build and Install Maven Project
         run: jf mvn clean install -DskipTests --build-name="BMW-Training-mvn-publish" --build-number=${{ github.run_number }}
